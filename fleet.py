@@ -3,8 +3,6 @@ from robot import Robots
 
 
 
-
-
 class Fleet:
 
     def __init__(self):
@@ -18,3 +16,6 @@ class Fleet:
 
         autobots = Robots ('Optimus Prime','AUTOBOTS, ROLL OUT on this lizards $%& !')
         self.fleet_list.append(autobots)
+
+        avengers_vill = Robots ('Ultron', "Avengers DISSASSEMBLE!! BOOM! *(mic drop)*")
+        self.fleet_list.append(avengers_vill)

@@ -13,6 +13,10 @@ class Herd:
         tri_tops = Dinos ('TRI-SaraClops', 40,"TRI-Horn Barrage")
         self.herd_list.append (tri_tops)
 
+        rap_tore = Dinos ('Reptar', 40, 'Reptar Roar')
+        self.herd_list.append(rap_tore)
+        
+
 
 
 
