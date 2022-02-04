@@ -12,7 +12,7 @@ class Battlefield:
     def __init__(self):
         self.fleet = Fleet()
         self.herd = Herd()
-        
+        self.display_welcome
 
     def display_welcome(self):
          print('Welcome to the THUNDA DOME!!')
@@ -25,8 +25,10 @@ class Battlefield:
              self.dino_turn()
              self.robo_turn()
 
-             if (self.fleet.fleet_list) < 0:
-                 print(self.display_winner)
+             if len(self.fleet.fleet_list) > 0 and len(self.herd.herd_list) < 0:
+                self.display_winner
+             elif len (self.herd.herd_list) > 0 and len(self.fleet.fleet_list) < 0:
+                 self.display_winner
             
                 
 
@@ -61,18 +63,6 @@ class Battlefield:
         for dino in (self.herd.herd_list):
             print(dino.name,dino.health,"Health")
 
-            
-        
-        # if self.herd.herd_list = [0]:
-        #     print(self.herd.herd_list[0])
-        # elif self.herd.herd_list = [1]:
-        #     print (self.herd.herd_list[1])
-        # else:
-        #     self.herd.herd_list = [2]:
-        #     print(self.herd.herd_list [2])
-
-
-
     def dino_turn (self):
         
         attacking_dino = random.choice (self.herd.herd_list)
@@ -96,11 +86,4 @@ class Battlefield:
 
     def run_game(self):
         self.battle ()
-        # self.fleet.fleet_list[2].attack(self.herd.herd_list[1])
-        # self.herd.herd_list[2].attack(self.fleet.fleet_list[1])
-        # self.dino_turn()
-        # self.robo_turn()
-
-        # while len(self.fleet.fleet_list) > 0 and len(self.herd.herd_list) > 0:
-        #      self.dino_turn()
-        #      self.robo_turn()
+        

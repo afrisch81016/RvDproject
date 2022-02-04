@@ -6,7 +6,7 @@ class Robots:
     def __init__ (self,name, phrase):
         self.name = name
         self.health = 75
-        self.weapon = Weapons("Blue Lightsaber",35)
+        self.weapon = Weapons("Blue Lightsaber",40)
         self.phrase = phrase
 
 # when we call attack() on battlefleld we must remember to pass in a dino we are attacking
